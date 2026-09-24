@@ -17,6 +17,10 @@ spec:
     spec:
       containers:
         - name: django-todo-container
+<<<<<<< Updated upstream
           image: mujahidhub/django-python-todo-app:3
+=======
+          image: mujahidhub/django-python-todo-app:v1
+>>>>>>> Stashed changes
           ports:
             - containerPort: 8000
