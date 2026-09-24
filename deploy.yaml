@@ -17,6 +17,6 @@ spec:
     spec:
       containers:
         - name: django-todo-container
-          image: mujahidhub/django-python-todo-app:3
+          image: mujahidhub/django-python-todo-app:4
           ports:
             - containerPort: 8000
