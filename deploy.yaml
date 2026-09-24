@@ -2,6 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: django-todo-app-deploy
+  namespace: django-todo
   labels:
     app: django-todo
 spec:
@@ -16,6 +17,6 @@ spec:
     spec:
       containers:
         - name: django-todo-container
-        image: mujahidhub/django-python-todo-app:1
-        ports:
-        - containerPort: 8000
+          image: mujahidhub/django-python-todo-app:1
+          ports:
+            - containerPort: 8000
